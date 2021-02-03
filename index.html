@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 変数・定数の３つの使い方 -->
+<!-- 宣言＝あだ名づくり・代入＝あだ名に値を紐付ける・参照＝あだ名に紐づいている値を使うこと -->
+<body>
+    <script>
+        // 変数について
+        let x = 1;
+        console.log(x);
+        console.log(x + 5);
+        // 一度、値を代入した後に、値を変更することができる。
+        x = "違う値にしてみるよ";
+        console.log(x);
+
+        let a = "文字列";
+        let b = "です";
+        console.log(a + b);
+
+        // 定数について
+        const c = 100;
+        console.log(c);
+        // 定数の場合、宣言と代入を分けて行うことはできない。
+        // また、変数のように、代入された値を途中で変更することもできない。
+        // 基本的には、定数（const）を使った方が良い。
+
+        {
+            // ブロックスコープの中で変数kを宣言。
+            let k = 1;
+            console.log(k);
+        }
+        // ブロックスコープ内で、定義された変数はブロックスコープの内でのみ有効。
+        // なので下記を実行すると、エラーが出る。
+        // console.log(k);
+
+        // ブロックスコープの中にブロックスコープを作ることもできる。
+        // 同じスコープのなかで、同じ変数名を使うはできない。
+        // ブロックスコープを使うと変数を使うときに、同じ変数が使われていないかチェックをする範囲をブロックスコープ内に限定できるので、長いコードになっても、手間を少なくできる。
+        {
+            let p = "ブロックスコープの中";
+            console.log(p);
+            {
+                let p = "ブロックスコープの中の中";
+                console.log(p);
+            }
+        }
+        // スコープの外の記述＝グローバルスコープ
+        let p = "グローバルスコープ";
+        console.log(p);
+        
+        const dog = "わん";
+        const cat = "にゃー";
+        const pig = "ぶーぶー";
+
+        console.log(dog);
+        console.log(cat);
+        console.log(pig);
+    </script>
+</body>
+</html>
