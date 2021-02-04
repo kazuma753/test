@@ -51,10 +51,13 @@
         // スコープの外の記述＝グローバルスコープ
         let p = "グローバルスコープ";
         console.log(p);
-        
-        const dog = "わん";
-        const cat = "にゃー";
-        const pig = "ぶーぶー";
+
+        // 何かを変更したい時に、変数を使えば、全てを書き換えなくても、代入してある値の中身（今回はf）を変更すればいいので、手間が省ける。
+        const f = "＝鳴き声";
+
+        const dog = "わん"+f;
+        const cat = "にゃー"+f;
+        const pig = "ぶーぶー"+f;
 
         console.log(dog);
         console.log(cat);
