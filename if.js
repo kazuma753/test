@@ -84,3 +84,13 @@ else if ( a || b ){
 else {
     console.log("falseです。");
 }
+
+// 「比較演算」
+const soushisan = 100000000;
+const ganmenhensachi = 75;
+
+if (soushisan > 100000000 && ganmenhensachi >= 65){
+    console.log("好みのタイプ");
+} else {
+    console.log("アウトオブ眼中");
+}
