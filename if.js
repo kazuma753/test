@@ -85,11 +85,21 @@ else {
     console.log("falseです。");
 }
 
-// 「比較演算」
-const soushisan = 100000000;
+// 「比較演算」パターン１
+const soushisan = 1000000000;
 const ganmenhensachi = 75;
 
-if (soushisan > 100000000 && ganmenhensachi >= 65){
+if (soushisan > 1000000000 && ganmenhensachi >= 65){
+    console.log("好みのタイプ");
+} else {
+    console.log("アウトオブ眼中");
+}
+
+// 「比較演算」パターン２
+const isRich = 10000000000;
+const isHandsome = ganmenhensachi >= 65;
+
+if (isRich && isHandsome){
     console.log("好みのタイプ");
 } else {
     console.log("アウトオブ眼中");
