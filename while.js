@@ -9,8 +9,8 @@ while (Boolean型の値){
 // console.log("繰り返す");
 // }
 
-let x = 0;
-while (x < 10){
-console.log("現在の値は${x}です。");
-x++;
-}
+// let x = 0;
+// while (x < 10){
+// console.log("現在の値は${x}です。");
+// x++;
+// }
